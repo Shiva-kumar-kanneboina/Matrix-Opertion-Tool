@@ -3,7 +3,7 @@ import numpy as np
 
 st.set_page_config(page_title="Matrix Operations Tool", layout="centered")
 
-st.title("🧮 Matrix Operations Tool")
+st.title(" Matrix Operations Tool")
 
 st.write("Enter matrices (rows separated by `;`, elements separated by spaces). Example:")
 st.code("1 2 3; 4 5 6; 7 8 9", language="text")
@@ -78,3 +78,4 @@ if st.button("Compute"):
                 st.success(f"✅ det(B) = {np.linalg.det(B):.2f}")
             else:
                 st.error("❌ Determinant only defined for square matrices.")
+
